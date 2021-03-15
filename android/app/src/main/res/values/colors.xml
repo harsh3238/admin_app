@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4051B4</color>
+    <color name="colorPrimaryDark">#2F3D88</color>
+    <color name="colorAccent">#9E4051B4</color>
+
+    <color name="md_white_1000">#ffffff</color>
+    <color name="trans_white_1000">#e6ffffff</color>
+
+    <color name="orange_dark">#F4511E</color>
+    <color name="orange_light">#FF7043</color>
+    <color name="md_grey_300">#E0E0E0</color>
+    <color name="md_green_500">#4CAF50</color>
+    <color name="md_yellow_600">#FDD835</color>
+    <color name="yellow">#f9a825</color>
+    <color name="text_default">#3a3a3a</color>
+    <color name="text_light">#808080</color>
+
+    <color name="purple_light">#7E57C2</color>
+    <color name="cyan_light">#00bcd4</color>
+    <color name="black_trans">#cc000000</color>
+
+
+</resources>

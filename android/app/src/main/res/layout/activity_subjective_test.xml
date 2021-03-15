@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="controller"
+            type="com.stucare.click_campus_admin.tests.ActivitySubjectiveTestRoom" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/ivQuestionPaper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tvNote"
+            android:visibility="gone"
+            android:layout_margin="5dp"/>
+
+        <!--<WebView
+            android:id="@+id/pdfView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tvNote"
+            android:layout_margin="5dp"/>-->
+
+        <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/pdfView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tvNote"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/tvNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D3D1D1"
+            android:layout_alignParentBottom="true"
+            android:text="Note: This screen is modified for Preview "
+            android:gravity="center"
+            android:padding="3dp"/>
+
+
+    </RelativeLayout>
+
+</layout>
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="file:///android_asset/themes/style.css">
+       <style>
+       {$style}
+       </style>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                messageStyle: 'none',
+                tex2jax: {preview: 'none'}
+            });
+        </script>
+        <script type="text/javascript"
+            src="file:///android_asset/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+        <script type="text/x-mathjax-config">
+                    {$config}
+                </script>
+    </head>
+    <body>
+        {$formula}
+    </body>
+</html>

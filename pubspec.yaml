@@ -1,0 +1,103 @@
+name: click_campus_admin
+description: Click Campus Admin App
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.3.5+22
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+  shared_preferences: ^0.5.1+1
+  video_player: 0.10.11+2
+  carousel_slider: ^1.1.0
+  url_launcher: ^5.0.2
+  flutter_calendar: ^0.0.8
+  flutter_calendar_carousel: ^1.3.15+6
+  intl: ^0.15.8
+  http: ^0.12.0+2
+  sqflite: ^1.1.5
+  flutter_downloader: ^1.1.7
+  path_provider: ^1.1.0
+  permission_handler: ^4.0.0
+  audioplayers: ^0.13.2
+  amazon_cognito_identity_dart: ^0.0.22
+  path: ^1.6.2
+  image_picker: ^0.6.1+10
+  mime_type: ^0.2.2
+  file_picker: ^1.3.7
+  geolocator: ^5.1.5
+  get_ip:
+    git:
+      url: https://github.com/ashiwalia/get_ip_flutter.git
+  connectivity: ^0.4.9
+  speech_recognition:
+    git:
+      url: https://github.com/ashiwalia/speech_recognition.git
+  youtube_player_flutter: ^6.0.3+2
+  page_indicator: ^0.2.1
+  firebase_messaging: ^6.0.16
+  flutter_local_notifications: ^1.4.4+2
+  charts_flutter: ^0.8.1
+  flutter_sound: ^2.1.1
+  package_info: ^0.4.0+6
+  flutter_slidable: ^0.5.3
+  font_awesome_flutter: ^8.4.0
+  multiselect_formfield: ^0.1.3
+  cached_network_image: ^2.3.1
+  fluttertoast: ^7.0.4
+  in_app_update: ^1.1.14
+  loadmore: ^1.0.3
+  camera: ^0.5.7+4
+  screenshot: ^0.1.1
+  esys_flutter_share: ^1.0.2
+  flutter_linkify: ^3.1.0
+  searchable_dropdown: ^1.1.3
+  animations: 1.1.2
+  simple_animations: 1.3.8
+  flutter_staggered_animations: 0.1.2
+  nb_utils: 3.1.6+7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://www.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  uses-material-design: true
+  fonts:
+  - family: StucareFont
+    fonts:
+    - asset: assets/fonts/my_font.ttf
+
+
+  assets:
+  - assets/videos/splash_video.mp4
+  - assets/main_back.jpg
+  - assets/dash_icons/
+  - assets/images/
+  - assets/profile.png
+  - assets/fee_dash/
+  - assets/ic_megaphone.png
+  - assets/sort.png
+  - assets/fees.jpg

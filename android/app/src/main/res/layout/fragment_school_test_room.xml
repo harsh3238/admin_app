@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="controller"
+            type="com.stucare.click_campus_admin.tests.FragmentSchoolTestRoom" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/tvQuestion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Question"
+                            android:textColor="@color/text_default"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_alignParentLeft="true"/>
+
+                        <ImageView
+                            android:id="@+id/ivRefresh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_refresh"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:layout_toRightOf="@+id/tvQuestion"
+                            android:layout_centerVertical="true"
+                            android:padding="8dp"
+                            android:onClick="@{controller::onClickRefresh}"/>
+
+
+                        <TextView
+                            android:id="@+id/tvMarks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Marks : "
+                            android:textColor="@color/text_default"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+                    <katex.hourglass.in.mathlib.MathView
+                        android:id="@+id/formulaTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        app:setTextSize="12sp"
+                        app:setClickable="true"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Options:"
+                        android:textColor="@color/text_default"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentLeft="true"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/optionClickerA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:onClick="@{controller::onClickOption}"
+                            android:tag="A"
+                            app:cardCornerRadius="4dp">
+
+                            <RelativeLayout
+                                android:id="@+id/backgroundViewA"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp">
+
+                                <FrameLayout
+                                    android:id="@+id/optionLabelViewA"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="5dp">
+
+                                    <ImageView
+                                        android:id="@+id/optionAlphabetIconA"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/c_circle_white"
+                                        android:tint="@color/text_light" />
+
+                                    <TextView
+                                        android:id="@+id/optionAlphabetA"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="A"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/md_white_1000"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+
+                                </FrameLayout>
+
+                                <katex.hourglass.in.mathlib.MathView
+                                    android:id="@+id/itemContentViewA"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:layout_toEndOf="@+id/optionLabelViewA"
+                                    app:setTextSize="12sp"
+                                    app:setClickable="true"
+                                    android:layout_gravity="center" />
+
+
+
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/optionClickerB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:onClick="@{controller::onClickOption}"
+                            android:tag="B"
+                            app:cardCornerRadius="4dp">
+
+                            <RelativeLayout
+                                android:id="@+id/backgroundViewB"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp">
+
+                                <FrameLayout
+                                    android:id="@+id/optionLabelViewB"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="5dp">
+
+                                    <ImageView
+                                        android:id="@+id/optionAlphabetIconB"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/c_circle_white"
+                                        android:tint="@color/text_light" />
+
+                                    <TextView
+                                        android:id="@+id/optionAlphabetB"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="B"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/md_white_1000"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+
+                                </FrameLayout>
+
+                                <katex.hourglass.in.mathlib.MathView
+                                    android:id="@+id/itemContentViewB"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:layout_toEndOf="@+id/optionLabelViewB"
+                                    app:setTextSize="12sp"
+                                    app:setClickable="true"
+                                    android:layout_gravity="center" />
+
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/optionClickerC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:onClick="@{controller::onClickOption}"
+                            android:tag="C"
+                            app:cardCornerRadius="4dp">
+
+                            <RelativeLayout
+                                android:id="@+id/backgroundViewC"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp">
+
+                                <FrameLayout
+                                    android:id="@+id/optionLabelViewC"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="5dp">
+
+                                    <ImageView
+                                        android:id="@+id/optionAlphabetIconC"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/c_circle_white"
+                                        android:tint="@color/text_light" />
+
+                                    <TextView
+                                        android:id="@+id/optionAlphabetC"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="C"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/md_white_1000"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+
+                                </FrameLayout>
+
+                                <katex.hourglass.in.mathlib.MathView
+                                    android:id="@+id/itemContentViewC"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:layout_toEndOf="@+id/optionLabelViewC"
+                                    app:setTextSize="12sp"
+                                    app:setClickable="true"
+                                    android:layout_gravity="center" />
+
+
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/optionClickerD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:onClick="@{controller::onClickOption}"
+                            android:tag="D"
+                            app:cardCornerRadius="4dp">
+
+                            <RelativeLayout
+                                android:id="@+id/backgroundViewD"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp">
+
+                                <FrameLayout
+                                    android:id="@+id/optionLabelViewD"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="5dp">
+
+                                    <ImageView
+                                        android:id="@+id/optionAlphabetIconD"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/c_circle_white"
+                                        android:tint="@color/text_light" />
+
+                                    <TextView
+                                        android:id="@+id/optionAlphabetD"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="D"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/md_white_1000"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+
+                                </FrameLayout>
+
+                                <katex.hourglass.in.mathlib.MathView
+                                    android:id="@+id/itemContentViewD"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:layout_toEndOf="@+id/optionLabelViewD"
+                                    app:setTextSize="12sp"
+                                    app:setClickable="true"
+                                    android:layout_gravity="center" />
+
+
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

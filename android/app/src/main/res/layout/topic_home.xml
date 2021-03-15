@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="controller"
+            type="com.stucare.click_campus_admin.video_lessons.ActivityVideoLessons" />
+
+
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="Class:"
+            android:textColor="@color/text_light"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true" />
+
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spClass"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_spinner"
+            android:layout_below="@+id/tvClass"/>
+
+        <TextView
+            android:id="@+id/tvSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="Subject:"
+            android:textColor="@color/text_light"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/spClass"/>
+
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spSubject"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_spinner"
+            android:layout_below="@+id/tvSubject"/>
+
+        <TextView
+            android:id="@+id/tvChapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="Chapter:"
+            android:textColor="@color/text_light"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/spSubject"/>
+
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spChapter"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_spinner"
+            android:layout_below="@+id/tvChapter"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/recyclerView"
+            android:layout_below="@+id/spChapter"/>
+
+    </RelativeLayout>
+
+
+</layout>

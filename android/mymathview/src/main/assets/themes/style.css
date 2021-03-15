@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    -webkit-touch-callout: none!important;
+    -webkit-user-select: none!important;
+    user-select: none!important;
+
+   }
+
+   .MathJax_Display {
+         text-align: center!important;
+       }
+
+
+
+
+
+           html {
+                  display: table;
+                  margin: auto;
+              }
+
+              body {
+                  display: table-cell;
+                  vertical-align: middle;
+              }

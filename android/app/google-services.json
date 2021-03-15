@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "911026266580",
+    "firebase_url": "https://stucare-cloud.firebaseio.com",
+    "project_id": "stucare-cloud",
+    "storage_bucket": "stucare-cloud.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911026266580:android:f44cb5668d13f6871cb641",
+        "android_client_info": {
+          "package_name": "com.stucare.cloud_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911026266580-2ulcofgkltjd041cef2p6ug6jovjg3no.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stucare.cloud_admin",
+            "certificate_hash": "9bc2302d0b76673f2d680ff472053e575560d74c"
+          }
+        },
+        {
+          "client_id": "911026266580-gs0e6t56e1pbeap40b9n2t6qbab76ra5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAw0QnCzG4SQNMJ5MqLXM8jarjLTrRHO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "911026266580-gs0e6t56e1pbeap40b9n2t6qbab76ra5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
